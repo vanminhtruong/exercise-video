@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="bai4.css">
+</head>
+<body>
+    <div class="video-container">
+        <p>Bấm phím f để hiển thị fullscreen linh hoạt, phím esc để thoát fullscreen</p>
+        <div class="video-wrapper">
+            <video src="adam.mp4"></video>
+            <div class="play-button-big">
+                <button class="play-big">
+                    <i class="fas fa-play"></i>
+                </button>
+            </div>
+            <div class="controls">
+                <div class="progress-bar">
+                    <div class="time">
+                        <div class="curent-time">0:00</div>
+                        <span>/</span>
+                        <div class="duration">0:00</div>
+                    </div>
+                    <div class="progress"></div>
+                    
+                </div>
+                <div class="buttons">
+                    <div class="group-controls">
+                        <button class="play">
+                            <i class="fas fa-play"></i>
+                        </button>
+                        <button class="rewind">
+                            <img src="first.png" alt="">
+                        </button>
+                        <button class="forward">
+                            <img src="last.png" alt="">
+                        </button>
+                        
+                    </div>
+                    <div class="group-volumn">
+                        <button class="volume">
+                            <i class="fas fa-volume-up"></i>
+                        </button>
+                        <button class="fullscreen">
+                            <i class="fas fa-expand"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="../../dist/bai4/bai4.js"></script>
+</body>
+</html>

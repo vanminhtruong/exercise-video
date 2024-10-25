@@ -1,0 +1,133 @@
+.video-container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    width: 800px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+video {
+    width: 100%;
+    display: block;
+}
+
+p{
+    text-align: center;
+    text-transform: uppercase;
+    
+}
+
+.controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    transition: opacity 0.3s;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 5px;
+    background: #444;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.progress {
+    width: 0;
+    height: 100%;
+    background: #fff;
+    position: relative;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 5px;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.play-button-big {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.play-big {
+    font-size: 48px;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.hide-controls .controls {
+    opacity: 0;
+}
+
+.video-wrapper:hover .controls {
+    opacity: 1;
+}
+
+.fullscreen-mode {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 9999;
+    background: black;
+    margin: 0;
+    padding: 0;
+}
+
+.fullscreen-mode video {
+    height: 100vh;
+    object-fit: contain;
+}
+
+button img{
+    width: 25px;
+    margin-top: 3px;
+}
+
+.time{
+    color: #fff;
+    margin: 0 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+}
+
+.current-time,
+.duration {
+    min-width: 40px;
+    /* display: inline-block; */
+}
+
+.group-controls{
+    display: flex;
+}
